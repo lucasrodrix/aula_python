@@ -1,5 +1,4 @@
 # Aula 7 - Constuindo Métodos, funções e classes
-
 # Televisão
 class Televisao:
 	def __init__(self):
@@ -20,16 +19,16 @@ class Televisao:
 		if self.ligada:
 			self.canal -= 1
 
-televisao = Televisao()
-
-print("A TV está Ligada: {}".format(televisao.ligada))
-televisao.power()
-print("A TV está Ligada: {}".format(televisao.ligada))
-print("Canal: {}".format(televisao.canal))
-televisao.aumentaCanal()
-televisao.aumentaCanal()
-print("Canal: {}".format(televisao.canal))
-televisao.power()
-televisao.aumentaCanal()
-print("A TV está Ligada: {}".format(televisao.ligada))
-print("Canal: {}".format(televisao.canal))
+if __name__ == '__main__':
+	televisao = Televisao()
+	print("A TV está Ligada: {}".format(televisao.ligada))
+	televisao.power()
+	print("A TV está Ligada: {}".format(televisao.ligada))
+	print("Canal: {}".format(televisao.canal))
+	televisao.aumentaCanal()
+	televisao.aumentaCanal()
+	print("Canal: {}".format(televisao.canal))
+	televisao.power()
+	televisao.aumentaCanal()
+	print("A TV está Ligada: {}".format(televisao.ligada))
+	print("Canal: {}".format(televisao.canal))
